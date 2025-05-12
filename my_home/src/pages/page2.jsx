@@ -1,5 +1,11 @@
-function Home() {
-  return <h1>2 페이지입니다</h1>;
+import React from 'react';
+
+function Page2() {
+  return (
+    <div>
+      <h1>Page2입니다</h1>
+    </div>
+  );
 }
 
-export default Home;
+export default Page2;

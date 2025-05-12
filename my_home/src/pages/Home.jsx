@@ -1,5 +1,9 @@
 function Home() {
-  return <h1>홈 페이지입니다</h1>;
+  return (
+    <div>
+      <h1>Home 페이지입니다</h1>
+    </div>
+  );
 }
 
 export default Home;
