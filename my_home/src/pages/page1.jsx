@@ -1,10 +1,12 @@
-import React from 'react';
+import Layout from '../components/Layout';
 
 function Page1() {
   return (
-    <div>
-      <h1>Page1입니다</h1>
-    </div>
+    <Layout>
+      <div>
+        <h1>Page1 내용</h1>
+      </div>
+    </Layout>
   );
 }
 
