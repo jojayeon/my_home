@@ -1,3 +1,4 @@
+/* 상단 바 전체  */
 .nav-bar {
   display: flex;
   justify-content: center;
@@ -5,6 +6,7 @@
   background: black;
 }
 
+/* 상단 바 메뉴 */
 .nav-bar a {
   background: lightgray;
   padding: 10px 20px;
