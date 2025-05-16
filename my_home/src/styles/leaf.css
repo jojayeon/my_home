@@ -1,0 +1,41 @@
+.leaf-container {
+  display: flex;
+  flex-direction: column; /* 수직 정렬 */
+  align-items: center;     /* 가로 정렬 가운데 */
+  justify-content: center;
+  min-height: 80vh;
+  padding: 40px;
+  text-align: center;
+}
+
+.leaf-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 200px);
+  grid-template-rows: repeat(2, 200px);
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.leaf-box {
+  background-color: #d4e8d4;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.next-button {
+  padding: 12px 24px;
+  background-color: #a0d6b4;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.next-button:hover {
+  background-color: #89c9a3;
+}
