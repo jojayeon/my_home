@@ -1,0 +1,36 @@
+.stem-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  padding: 20px;
+  text-align: center;
+}
+
+.intro-box {
+  background-color: #e4f2ea;
+  padding: 40px;
+  border-radius: 12px;
+  max-width: 600px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin-bottom: 30px;
+}
+
+.intro-box h1 {
+  margin-bottom: 20px;
+}
+
+.next-button {
+  padding: 12px 24px;
+  background-color: #a0d6b4;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.next-button:hover {
+  background-color: #89c9a3;
+}
