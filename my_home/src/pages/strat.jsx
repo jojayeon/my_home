@@ -9,7 +9,7 @@ function Home() {
     <div className="home-wrapper">
       <h1>자 연</h1>
       <div className="home-buttons">
-        <Link to="/page1">page1</Link>
+        <Link to="/leaf">leaf</Link>
       </div>
     </div>
   );
