@@ -5,9 +5,9 @@ import '../styles/Navigation.css'
 function Navigation() {
   return (
     <nav className="nav-bar">
-      <Link to="/page1">page1</Link>
-      <Link to="/page2">page2</Link>
-      <Link to="/page3">page3</Link>
+      <Link to="/leaf">leaf</Link>
+      <Link to="/stem">stem</Link>
+      <Link to="/nature">nature</Link>
     </nav>
   );
 }
