@@ -3,12 +3,10 @@
 //자료를 누르면 커지면서 보이게 하는게 목적 
 
 import Layout from '../components/Layout';
-import { useNavigate } from 'react-router-dom';
 import '../styles/leaf.css';
+import CornerButton from '../components/CornerButton';
 
 function Leaf() {
-  const navigate = useNavigate();
-
   return (
     <Layout>
       <div className="leaf-container">
@@ -18,12 +16,11 @@ function Leaf() {
           <div className="leaf-box">🍃 끈기</div>
           <div className="leaf-box">🍀 연결</div>
         </div>
-        <button className="next-button" onClick={() => navigate('/stem')}>
-          다음
-        </button>
+        <CornerButton to="/stem" />
       </div>
     </Layout>
   );
 }
 
 export default Leaf;
+
