@@ -1,0 +1,44 @@
+/* styles/CornerButton.css */
+.corner-button-wrapper {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 80px;
+  height: 80px;
+  z-index: 1000;
+  cursor: pointer;
+  transition: all 0.8s ease-in-out;
+}
+
+.corner-button-wrapper.clicked {
+  transform: translate(-100vw, -100vh);
+  opacity: 0;
+}
+
+.corner-button {
+  width: 100%;
+  height: 100%;
+  background: #8dc891;
+  clip-path: polygon(100% 0, 100% 100%, 0 100%);
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 10px;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s;
+}
+
+.corner-text {
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+
+.corner-button:hover {
+  background: #388E3C;
+}
