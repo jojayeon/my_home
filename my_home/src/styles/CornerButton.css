@@ -1,44 +1,70 @@
-/* styles/CornerButton.css */
-.corner-button-wrapper {
+.corner-container {
   position: fixed;
   bottom: 20px;
-  right: 20px;
-  width: 80px;
-  height: 80px;
-  z-index: 1000;
-  cursor: pointer;
-  transition: all 0.8s ease-in-out;
+  right: 0vw;
+  bottom: 0vh;
+  z-index: 100;
 }
 
-.corner-button-wrapper.clicked {
-  transform: translate(-100vw, -100vh);
+/* 덮개 박스: 초기에는 오른쪽 하단 밖에 있음 */
+.cover-box {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  opacity: 1;
+  top: 90%;
+  left: 93%;
+  transition: top 1s ease, left 1s ease, opacity 1s ease;
+  z-index: 99;
+  pointer-events: none;
+  background:rgb(211, 211, 211, 1);
+}
+
+/* 클릭 시 위로 이동 + 불투명해짐 */
+.corner-container.clicked .cover-box {
+  top: 10%;
+  left: 0;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* 삼각형 모양 버튼 */
+.corner-button {
+  width: 7vw;
+  height: 10vh;
+  padding-bottom: 2vh;
+  background-color: #2a8f43;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  clip-path: polygon(88% 9%, 102% 0, 89% 33%, 74% 56%, 50% 78%, 25% 93%, 0 100%,10% 65%, 15% 7%, 16% 10%, 41% 13%, 67% 14%);
+  transition: transform 0.7s linear, opacity 1.5s linear;
+  z-index: 100;
+  position: relative;
+}
+
+/* 클릭 시 버튼도 위로 날아감 */
+.corner-container.clicked .corner-button {
+  transform: translate(-100vw, -85vh);
   opacity: 0;
 }
 
-.corner-button {
-  width: 100%;
-  height: 100%;
-  background: #8dc891;
-  clip-path: polygon(100% 0, 100% 100%, 0 100%);
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-start;
-  padding: 10px;
-  position: relative;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  transition: opacity 0.3s;
-}
-
-.corner-text {
-  color: white;
-  font-weight: bold;
-  font-size: 14px;
+.cover-box::before {
+  content: '';
   position: absolute;
-  bottom: 10px;
-  left: 10px;
+  top: 100%;
+  left: 30%;
+  width: 141%;
+  height: 1px;
+  background-color: black;
+  transform: rotate(-65deg);
+  transform-origin: top left;
+
+  opacity: 1;
+  transition: opacity 0.5s ease 1s; /* 1초 후에 0.5초 동안 사라짐 */
 }
-
-
-.corner-button:hover {
-  background: #388E3C;
+.corner-container.clicked .cover-box::before {
+  opacity: 0;
 }

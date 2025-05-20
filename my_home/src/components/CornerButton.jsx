@@ -1,27 +1,28 @@
 // components/CornerButton.jsx
-import { useNavigate } from 'react-router-dom';
-import { useState } from 'react';
-import '../styles/CornerButton.css';
+// CornerButton.jsx
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import "../styles/CornerButton.css"; // 아래 스타일을 여기에 작성
 
-function CornerButton({ to }) {
+const CornerButton = ({ to }) => {
+  const [isClicked, setIsClicked] = useState(false);
   const navigate = useNavigate();
-  const [clicked, setClicked] = useState(false);
 
   const handleClick = () => {
-    setClicked(true);
+    setIsClicked(true);
     setTimeout(() => {
       navigate(to);
-    }, 800); // 애니메이션 시간 후 이동
+    }, 1500); // 애니메이션 지속시간
   };
 
   return (
-    <div className={`corner-button-wrapper ${clicked ? 'clicked' : ''}`} onClick={handleClick}>
-      <div className="corner-button">
-        <span className="corner-text">다음</span>
-      </div>
+    <div className={`corner-container ${isClicked ? "clicked" : ""}`}>
+      <div className="cover-box" />
+      <button className="corner-button" onClick={handleClick}>
+        다음
+      </button>
     </div>
   );
-}
+};
 
 export default CornerButton;
-
