@@ -1,11 +1,10 @@
 .layout-wrapper {
   background: black;
-  padding: 20px;
   min-height: 100vh;
 }
 
 .layout-content {
-  background: lightgray;
+  background: rgb(211, 211, 211);
   padding: 40px;
   min-height: 80vh;
   margin-top: 20px;
