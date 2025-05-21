@@ -1,70 +1,26 @@
-.corner-container {
-  position: fixed;
-  bottom: 20px;
-  right: 0vw;
-  bottom: 0vh;
-  z-index: 100;
-}
-
-/* 덮개 박스: 초기에는 오른쪽 하단 밖에 있음 */
-.cover-box {
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  opacity: 1;
-  top: 90%;
-  left: 93%;
-  transition: top 1s ease, left 1s ease, opacity 1s ease;
-  z-index: 99;
-  pointer-events: none;
-  background:rgb(211, 211, 211, 1);
-}
-
-/* 클릭 시 위로 이동 + 불투명해짐 */
-.corner-container.clicked .cover-box {
-  top: 10%;
-  left: 0;
-  opacity: 1;
-  pointer-events: auto;
-}
-
-/* 삼각형 모양 버튼 */
+/* components/CornerButton.css */
 .corner-button {
-  width: 7vw;
-  height: 10vh;
-  padding-bottom: 2vh;
-  background-color: #2a8f43;
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  width: 80px;
+  height: 80px;
+  background-color: #3b82f6; /* 파란색 */
   color: white;
-  font-size: 15px;
-  font-weight: bold;
   border: none;
+  border-top-left-radius: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
   cursor: pointer;
-  clip-path: polygon(88% 9%, 102% 0, 89% 33%, 74% 56%, 50% 78%, 25% 93%, 0 100%,10% 65%, 15% 7%, 16% 10%, 41% 13%, 67% 14%);
-  transition: transform 0.7s linear, opacity 1.5s linear;
-  z-index: 100;
-  position: relative;
+  padding: 12px 24px;
+  background-color: #a0d6b4;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-/* 클릭 시 버튼도 위로 날아감 */
-.corner-container.clicked .corner-button {
-  transform: translate(-100vw, -85vh);
-  opacity: 0;
-}
-
-.cover-box::before {
-  content: '';
-  position: absolute;
-  top: 100%;
-  left: 30%;
-  width: 141%;
-  height: 1px;
-  background-color: black;
-  transform: rotate(-65deg);
-  transform-origin: top left;
-
-  opacity: 1;
-  transition: opacity 0.5s ease 1s; /* 1초 후에 0.5초 동안 사라짐 */
-}
-.corner-container.clicked .cover-box::before {
-  opacity: 0;
+.corner-button:hover {
+  background-color: #89c9a3;
 }
