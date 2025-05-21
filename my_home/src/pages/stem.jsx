@@ -1,25 +1,32 @@
 //자기소개하는 페이지
 //내 기본적인 스펙과 이야기를 적을 것
 import Layout from '../components/Layout';
-import { useNavigate } from 'react-router-dom';
 import '../styles/stem.css'; // ✨ 새로운 CSS 파일 추가 예정
+import CornerButton from '../components/CornerButton';
 
 function Stem() {
-  const navigate = useNavigate();
 
   return (
     <Layout>
       <div className="stem-container">
         <div className="intro-box">
-          <h1>안녕하세요, 저는 조자연입니다.</h1>
-          <p>
-            저는 자연과 같은 조화를 추구하며, 기술과 감성을 잇는 개발자가 되고 싶습니다. <br />
-            이 포트폴리오는 저의 생각과 정체성을 자연이라는 이야기로 풀어냈습니다.
-          </p>
+          <div>
+            사진 공간 
+          </div>
+          <div>이름 : xxx</div>
+          <div>스킬 : xxx</div>
+          <br />
+          <div>
+            여기에 나를 소개하는 글 하나 
+          </div>
+          <br />
+          <p> 여기는 이모키콘으로 해서 연결하기</p>
+          <div>jojayeon6152@gmail.com</div>
+          <div>git.hub</div>
+          <div>노션</div>
+          <div>인스타</div>
         </div>
-        <button className="next-button" onClick={() => navigate('/nature')}>
-          다음
-        </button>
+          <CornerButton to="/nature" />
       </div>
     </Layout>
   );

@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 80vh;
+  height: 84.3vh;
   text-align: center;
 }
 
@@ -11,18 +11,4 @@
   font-size: 2.5rem;
   margin-bottom: 40px;
   color: #3d5a40;
-}
-
-.return-button {
-  padding: 12px 24px;
-  background-color: #b4ddb4;
-  border: none;
-  border-radius: 8px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.return-button:hover {
-  background-color: #9ecf9e;
 }
