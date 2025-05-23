@@ -3,11 +3,17 @@
   flex-direction: column; /* 수직 정렬 */
   align-items: center;     /* 가로 정렬 가운데 */
   justify-content: center;
-  min-height: 80vh;
-  padding: 40px;
+  min-height: 95vh;
   text-align: center;
+  height: 80vh;
+  width: 100vw;
+
+  /* ✅ 배경 이미지 설정 */
+  background: url('../../public/images/leaf_bg.png') no-repeat center center fixed;
+  background-size: cover;
 }
 
+/* 나머지 유지 */
 .leaf-grid {
   display: grid;
   grid-template-columns: repeat(2, 200px);

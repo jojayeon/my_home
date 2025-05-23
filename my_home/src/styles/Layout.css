@@ -4,8 +4,9 @@
 }
 
 .layout-content {
-  background: rgb(211, 211, 211);
-  padding: 40px;
-  min-height: 80vh;
-  margin-top: 20px;
+  background: #E6F0E6;
+  min-height: 95vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
 }

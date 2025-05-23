@@ -5,19 +5,14 @@
   right: 16px;
   width: 80px;
   height: 80px;
-  background-color: #3b82f6; /* 파란색 */
   color: white;
   border: none;
-  border-top-left-radius: 100%;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  font-size: 16px;
   cursor: pointer;
   padding: 12px 24px;
-  background-color: #a0d6b4;
-  border: none;
+  background-color: #A3C9A8;
   border-radius: 8px;
   font-size: 1rem;
-  cursor: pointer;
   transition: background-color 0.3s;
 }
 
