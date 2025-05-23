@@ -3,22 +3,85 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 80vh;
-  padding: 20px;
+  height: 95vh;
+  width: 80vw;
+  max-width: 1000px;
   text-align: center;
+  padding: 4vh 3vw;
+  box-sizing: border-box;
 }
 
 .intro-box {
-  background-color: #e4f2ea;
-  padding: 40px;
-  border-radius: 12px;
-  max-width: 600px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  margin-bottom: 30px;
+  background: rgba(255,255,255,0.9);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-radius: 1%;
+  width: 80vw;
+  height: 80vh;
+  padding: 8% 1% 1% 1%;
+  display: flex;
+  flex-direction: column;
+  gap: 4vh;
+  box-sizing: border-box
 }
 
-.intro-box h1 {
-  margin-bottom: 20px;
+/* 상단: 사진 + 정보 */
+.top-section {
+  display: flex;
+  justify-content: center;
+  gap: 4%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
+/* 사진 공간 */
+.profile-photo {
+  margin-bottom: 0.3rem;
+  width: 15vw;
+  height: 35vh;
+  background-color: #ccc; /*삭제 코드*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+/* 이름/스킬/이메일 */
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  gap: 1.5rem;
+  font-size: 1.5rem;
+}
+
+/* 복사되는 이메일 */
+.copy-email {
+  color: #007acc;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.copy-email:hover {
+  text-decoration: none;
+}
+
+/* 소개글 */
+.intro-text {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  padding: 0 2%;
+}
+
+/* 하단 아이콘 */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+}
+
+.social-links img {
+  width: 8vw;
+  height: 8vh;
+  cursor: pointer;
+}
