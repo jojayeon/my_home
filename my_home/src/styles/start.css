@@ -1,9 +1,11 @@
 .home-wrapper {
-  background: black;
+  background: url('../../public/images/start_bg.png') no-repeat center center fixed;
+  background-size: cover;
   color: white;
   text-align: center;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }

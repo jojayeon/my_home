@@ -3,12 +3,15 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 84.3vh;
+  height: 95vh;
+  width: 100vw;
   text-align: center;
+  background: url('../../public/images/nature_bg.png') no-repeat center center fixed;
+  background-size: cover;
 }
 
 .nature-container h1 {
   font-size: 2.5rem;
   margin-bottom: 40px;
-  color: #3d5a40;
+  color: #ffffff;
 }

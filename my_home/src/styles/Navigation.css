@@ -3,13 +3,17 @@
   display: flex;
   justify-content: center;
   gap: 20px;
-  background: black;
+  background: rgba(230, 240, 230, 0.8);
+  min-height: 5vh;
+  height: 5vh;
 }
 
 /* 상단 바 메뉴 */
 .nav-bar a {
-  background: lightgray;
-  padding: 10px 20px;
+  background: rgb(255, 255, 255);
+  border-radius: 5%;
+  margin: 0.2vh 0 0.2vh 0;
+  padding: 0.5% 1%;
   text-decoration: none;
   color: black;
 }
