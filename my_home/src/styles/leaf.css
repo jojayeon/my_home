@@ -9,7 +9,7 @@
   width: 100vw;
 
   /* ✅ 배경 이미지 설정 */
-  background: url('../../public/images/leaf_bg.png') no-repeat center center fixed;
+  background: url('../../public/images/leaf_bg3.png') no-repeat center center fixed;
   background-size: cover;
 }
 
