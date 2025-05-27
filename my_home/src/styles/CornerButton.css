@@ -19,3 +19,13 @@
 .corner-button:hover {
   background-color: #89c9a3;
 }
+@media (max-width: 600px) {
+  .corner-button {
+    width: 60px;
+    height: 60px;
+    font-size: 0.8rem;
+    padding: 8px 16px;
+    bottom: 12px;
+    right: 12px;
+  }
+}

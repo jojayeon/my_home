@@ -1,6 +1,8 @@
 .layout-wrapper {
   background: black;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .layout-content {
@@ -9,4 +11,5 @@
   width: 100vw;
   display: flex;
   justify-content: center;
+  align-items: flex-start;
 }
