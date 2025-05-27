@@ -1,19 +1,21 @@
 /* 상단 바 전체  */
 .nav-bar {
+  flex-grow: 1;
   display: flex;
   justify-content: center;
   gap: 20px;
-  background: rgba(230, 240, 230, 0.8);
+  background: #c3dba6;
   min-height: 5vh;
   height: 5vh;
+  width: 100vw;
 }
 
 /* 상단 바 메뉴 */
 .nav-bar a {
-  background: rgb(255, 255, 255);
-  border-radius: 5%;
+  background: #A3C9A8;
+  border-radius: 9%;
   margin: 0.2vh 0 0.2vh 0;
   padding: 0.5% 1%;
   text-decoration: none;
-  color: black;
+  color: white;
 }
