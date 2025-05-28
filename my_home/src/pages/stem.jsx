@@ -47,9 +47,9 @@ function Stem() {
           {/* 소셜 링크 (이메일은 mailto) */}
           <div className="social-links">
             <div>
-              <a href="mailto:jojayeon6152@gmail.com"><img src="/images/git.png" alt="Email" /></a>
+              <a href="mailto:jojayeon6152@gmail.com"><img src="/images/git.jpg" alt="Email" /></a>
             </div>
-            <a href="https://github.com/jojayeon"><img src="/images/mail.png" alt="GitHub" /></a>
+            <a href="https://github.com/jojayeon"><img src="/images/mail.jpg" alt="GitHub" /></a>
             <a href="https://www.notion.so/1c74d9dd132680a6b8f8df9e76f20291"><img src="/images/notion.jpg" alt="Notion" /></a>
           </div>
         </div>
