@@ -1,28 +1,31 @@
+/* 전체 페이지 배경 + 중앙 정렬 컨테이너 */
 .leaf-container {
   display: flex;
-  flex-direction: column; /* 수직 정렬 */
-  align-items: center;     /* 가로 정렬 가운데 */
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   min-height: 95vh;
   text-align: center;
-  height: 80vh;
   width: 100vw;
-
-  /* ✅ 배경 이미지 설정 */
   background: url('../../public/images/leaf_bg3.png') no-repeat center center fixed;
   background-size: cover;
+  overflow: visible;
 }
 
-/* 나머지 유지 */
+/* 4개의 박스를 배치하는 그리드 */
 .leaf-grid {
   display: grid;
-  grid-template-columns: repeat(2, 200px);
-  grid-template-rows: repeat(2, 200px);
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 24px;
   margin-bottom: 40px;
+  width: 100%;
+  max-width: 500px;
+  position: relative;
 }
 
+/* 개별 박스 */
 .leaf-box {
+  position: relative;
   background-color: #d4e8d4;
   border-radius: 12px;
   display: flex;
@@ -30,5 +33,124 @@
   align-items: center;
   font-size: 1.2rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  padding: 1rem;
+  cursor: pointer;
+  z-index: 1;
+  min-height: 180px;
 }
 
+/* ----------------------------------- */
+/* 호버 시 확대 효과 */
+.leaf-box:nth-child(1):hover {
+  transform: scale(2.5) translate(20%, 20%);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+.leaf-box:nth-child(2):hover {
+  transform: scale(2.5) translate(-20%, 20%);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+.leaf-box:nth-child(3):hover {
+  transform: scale(2.5) translate(20%, -20%);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+.leaf-box:nth-child(4):hover {
+  transform: scale(2.5) translate(-20%, -20%);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+/* 호버 시 내용 등장 */
+.leaf-box:hover .leaf-hover-content {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* 숨겨진 호버 콘텐츠 */
+.leaf-hover-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.97);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  text-align: center;
+  z-index: 3;
+  font-size: 0.55rem;
+}
+
+/* 호버 내용 안 이미지 */
+.leaf-hover-content img {
+  width: 70%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+/* 소개글 텍스트 */
+.leaf-box p {
+  font-size: 0.55rem;
+  line-height: 1.4;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* 박스 안 제목 */
+.leaf-title {
+  z-index: 2;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+/* 소개 소제목 */
+.leaf-subtitle {
+  font-weight: bold;
+  font-size: 0.85rem;
+  margin-bottom: 6px;
+}
+
+/* 링크 스타일 */
+.leaf-link {
+  display: inline-block;
+  margin-top: 4px;
+  color: #3366cc;
+  text-decoration: underline;
+  font-weight: 500;
+  font-size: 0.6rem;
+}
+
+.leaf-link.small-margin {
+  margin-top: 2px;
+}
+
+/* 반응형 (모바일에서 확대 방지) */
+@media screen and (max-width: 600px) {
+  .leaf-box:hover {
+    transform: scale(1.2) translate(0%, 0%);
+  }
+
+  .leaf-hover-content {
+    font-size: 0.6rem;
+  }
+
+  .leaf-box p {
+    font-size: 0.6rem;
+  }
+
+  .leaf-title {
+    font-size: 1rem;
+  }
+}
