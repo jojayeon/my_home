@@ -40,9 +40,11 @@
   margin-bottom: 0.3rem;
   width: 15vw;
   height: 35vh;
+  min-width: 200px;
   background-image: url('../../public/images/wkdus.jpg');
   background-size: cover;
   background-color: #ccc; /*삭제 코드*/
+  background-position: center top;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -103,6 +105,8 @@
   .profile-photo {
     width: 140px;
     height: 140px;
+    min-width: unset;
+    background-position: unset;
   }
 
   .profile-info {
@@ -139,5 +143,23 @@
   .intro-box {
     padding: 10% 2% 2% 2%;
     gap: 2vh;
+  }
+}
+
+@media (max-width: 930px) {
+  .top-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-info {
+    text-align: center;
+    font-size: 1.2rem;
+    gap: 1rem;
+  }
+
+  .intro-text {
+    margin: 0 auto;
+    text-align: center;
   }
 }

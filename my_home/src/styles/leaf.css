@@ -136,10 +136,15 @@
   margin-top: 2px;
 }
 
+.leaf-box:hover .leaf-hover-content img {
+  max-width: 150px; /* 예: 최대 150px 너비로 제한 */
+  width: 100%;
+  height: auto;
+}
 /* 반응형 (모바일에서 확대 방지) */
 @media screen and (max-width: 600px) {
   .leaf-box:hover {
-    transform: scale(1.2) translate(0%, 0%);
+    transform: none !important;
   }
 
   .leaf-hover-content {

@@ -13,7 +13,7 @@ function Leaf() {
         '서버, 데이터베이스, 프론트, 백 서버를 따로 제작하였습니다.',
         '배포하지 않았습니다.',
       ],
-      image: '/images/rock.png',
+      image: '/images/rock.jpg',
       links: [
         {
           label: 'ppt 보기',
@@ -37,7 +37,7 @@ function Leaf() {
       image: '/images/team2.jpg',
       links: [
         {
-          label: 'ppt 보기\n',
+          label: 'ppt 보기',
           href: 'https://drive.google.com/file/d/169KFih1yHgZAl6hqTGO4Kmfigx3fwzl1/view?usp=sharing',
           download: true,
         },
