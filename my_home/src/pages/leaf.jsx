@@ -88,6 +88,25 @@ function Leaf() {
         },
       ],
     },
+    {
+      title: "fps연습\n(개인 프로젝트)",
+      subtitle: '에임 연습',
+      description: [
+        '오버워치라는 게임을 즐기면서 너무 빠지는 것을 방지하고',
+        '실력은 좋아졌으면 하는 마음에 만든 프로젝트입니다.',
+      ],
+      image: '/images/aim.jpg',
+      links: [
+        {
+          label: '바로가기',
+          href: 'https://aim-practice.vercel.app/',
+        },
+        {
+          label: '깃허브 바로가기',
+          href: 'https://github.com/jojayeon/Aim_Practice',
+        },
+      ],
+    },
   ];
 
   return (
