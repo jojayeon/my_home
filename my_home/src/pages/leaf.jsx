@@ -99,11 +99,15 @@ function Leaf() {
       links: [
         {
           label: '바로가기',
-          href: 'https://aim-practice.vercel.app/',
+          href: 'https://aim-practice-3-d.vercel.app/',
         },
         {
           label: '깃허브 바로가기',
           href: 'https://github.com/jojayeon/Aim_Practice',
+        },
+        {
+          label: '노션 바로가기',
+          href: 'https://www.notion.so/1f14d9dd1326800e9505e8a9cf6ff65e',
         },
       ],
     },
