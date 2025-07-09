@@ -59,7 +59,7 @@ function Leaf() {
       links: [
         {
           label: '바로가기',
-          href: 'https://myrestaurant.s3.ap-northeast-2.amazonaws.com/restaurant_map2.html',
+          href: 'https://py-really-delicious-restaurant-fs28ehrn1-jojayeons-projects.vercel.app/',
         },
         {
           label: '깃허브 바로가기',
